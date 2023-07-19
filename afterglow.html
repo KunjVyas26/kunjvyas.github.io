@@ -562,28 +562,5 @@
         };
     </script>
 
-<!-- Go to next project -->
-<button id="nextProjectBtn" onclick="goToNextProject()">Mooddl - An E-classroom App</button>
-
-    <script>
-        function goToNextProject() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        }
-
-         // Show the back-to-top button when scrolling down
-         window.onscroll = function() {
-            var nextProjectBtn = document.getElementById("nextProjectBtn");
-            if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-                window.location.href = "mooddl.html";
-            } else {
-                nextProjectBtn.style.display = "none";
-            }
-        };
-    </script>
-
-
 </body>
 </html>
