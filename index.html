@@ -41,11 +41,20 @@
 
 <title>Character by Character Text</title>
     <style>
+        /* Style for the container to center the text */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
         /* Style for the text container */
         #textContainer {
-            font-size: 24px;
+            font-size: 30px;
             font-family: Arial, sans-serif;
             white-space: pre;
+            font-weight: bold;
         }
     </style>
 
@@ -100,7 +109,7 @@
 <div id="textContainer"></div>
 
 <script>
-    const text = "Generating text character by character in HTML."; // Your text here
+    const text = "Hi! I am Kunj Vyas! UX Designer, Researcher and Developer!"; // Your text here
     const textContainer = document.getElementById("textContainer");
     let index = 0;
 
@@ -121,24 +130,7 @@
         <div class="row">
             <div class="span12">
                 <div id="textContainer"></div>
-
-                <script>
-                    const text = "Hi! I am Kunj Vyas! UX Designer, Researcher and Developer!"
-                    // <h2 style="text-align:center;"><b>Hi! I am Kunj Vyas! <br>UX Designer, Researcher and Developer!</b></h2>
-                    const textContainer = document.getElementById("textContainer");
-                    let index = 0;
-
-                    function displayCharacterByCharacter() {
-                        if (index < text.length) {
-                            textContainer.textContent += text[index];
-                            index++;
-                            setTimeout(displayCharacterByCharacter, 100); // Adjust the delay time (in milliseconds) as needed
-                        }
-                    }
-
-                    displayCharacterByCharacter();
-                </script>
-                
+                <h2 style="text-align:center;"><b>Hi! I am Kunj Vyas! <br>UX Designer, Researcher and Developer!</b></h2>
                 <h4 class="center">Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.</h4>
             </div> 
         </div>
