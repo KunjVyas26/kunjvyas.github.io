@@ -96,13 +96,50 @@
 </header>
 <!-- End Header -->
 
+<!-- The container where the text will be displayed character by character -->
+<div id="textContainer"></div>
+
+<script>
+    const text = "Generating text character by character in HTML."; // Your text here
+    const textContainer = document.getElementById("textContainer");
+    let index = 0;
+
+    function displayCharacterByCharacter() {
+        if (index < text.length) {
+            textContainer.textContent += text[index];
+            index++;
+            setTimeout(displayCharacterByCharacter, 100); // Adjust the delay time (in milliseconds) as needed
+        }
+    }
+
+    displayCharacterByCharacter();
+</script>
+
 <!-- Start Intro Box -->
 <section id="intro-box" class="margin-0">
 	<div class="container">
         <div class="row">
             <div class="span12">
-                <h2 style="text-align:center;"><b>Hi! I am Kunj Vyas! <br>UX Designer, Researcher and Developer!</b></h2>
-                <h5 class="center">Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.</h5>
+                <div id="textContainer"></div>
+
+                <script>
+                    const text = "Hi! I am Kunj Vyas! UX Designer, Researcher and Developer!"
+                    // <h2 style="text-align:center;"><b>Hi! I am Kunj Vyas! <br>UX Designer, Researcher and Developer!</b></h2>
+                    const textContainer = document.getElementById("textContainer");
+                    let index = 0;
+
+                    function displayCharacterByCharacter() {
+                        if (index < text.length) {
+                            textContainer.textContent += text[index];
+                            index++;
+                            setTimeout(displayCharacterByCharacter, 100); // Adjust the delay time (in milliseconds) as needed
+                        }
+                    }
+
+                    displayCharacterByCharacter();
+                </script>
+                
+                <h4 class="center">Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.</h4>
             </div> 
         </div>
     </div>
@@ -150,25 +187,6 @@
     </div>
 </footer>
 <!-- End Footer -->
-
-<!-- The container where the text will be displayed character by character -->
-<div id="textContainer"></div>
-
-<script>
-    const text = "Generating text character by character in HTML."; // Your text here
-    const textContainer = document.getElementById("textContainer");
-    let index = 0;
-
-    function displayCharacterByCharacter() {
-        if (index < text.length) {
-            textContainer.textContent += text[index];
-            index++;
-            setTimeout(displayCharacterByCharacter, 100); // Adjust the delay time (in milliseconds) as needed
-        }
-    }
-
-    displayCharacterByCharacter();
-</script>
 
 <!-- bottom to top button -->
 <button id="backToTopBtn" onclick="backToTop()">Back to Top</button>
